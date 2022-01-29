@@ -23,6 +23,7 @@ public class Main {
         System.out.print("Enter the number of cakes: ");
         int numOfCakes = scannerName.nextInt();
 
+
         System.out.println("Number of cups is: " + numOfCups); //now it will print out whatever the input was
         System.out.println("Number of cakes is: " + numOfCakes);
         //the plus signs allows us to concantenate them together
@@ -37,7 +38,7 @@ public class Main {
         System.out.printf("Your final total is $% .2f",  postTaxTotal);
         //printf changes to print format. the % is considered to be a placeholder. the .2f says to use 2 decimals,
         //similar concept to fstrings in python
-
+        //n will also skip to the next line down
 
     }
 }
