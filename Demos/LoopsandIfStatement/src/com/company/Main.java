@@ -49,7 +49,13 @@ public class Main {
 //            System.out.println(k);
 //            k++;
 //        }
-
+        System.out.println("Nested Loop");
+        for (int i = 0; i < 10; i++) { //outer loop
+            for (int l = 0; l < 10; l++) { //inner loop
+                System.out.print(i + " " + l + " ");
+            }
+            System.out.println(); //to jump to the next line
+        }
         // ********
         // *******
         // ******
@@ -61,13 +67,13 @@ public class Main {
         // decrease one star each line
         // prompt the user to enter the number of *
         // we need to do this without writing so many ********* statements, we want to use a loop
-        Scanner stars = new Scanner(System.in);
-        System.out.print("Enter a number of stars: ");
-        double numOfStars = stars.nextDouble();
-
-        for (i = numOfStars; i >= 0; i--) {
-            System.out.println("*" * i);
-        }
+//        Scanner stars = new Scanner(System.in);
+//        System.out.print("Enter a number of stars: ");
+//        double numOfStars = stars.nextDouble();
+//
+//        for (int i = 0; i >= 0; i--) {
+//            System.out.println();
+//        }
 
     }
 }
