@@ -49,13 +49,13 @@ public class Main {
 //            System.out.println(k);
 //            k++;
 //        }
-        System.out.println("Nested Loop");
-        for (int i = 0; i < 10; i++) { //outer loop
-            for (int l = 0; l < 10; l++) { //inner loop
-                System.out.print(i + " " + l + " ");
-            }
-            System.out.println(); //to jump to the next line
-        }
+//        System.out.println("Nested Loop");
+//        for (int i = 0; i < 10; i++) { //outer loop
+//            for (int l = 0; l < 10; l++) { //inner loop
+//                System.out.print(i + " " + l + " ");
+//            }
+//            System.out.println(); //to jump to the next line
+//        }
         // ********
         // *******
         // ******
@@ -67,13 +67,19 @@ public class Main {
         // decrease one star each line
         // prompt the user to enter the number of *
         // we need to do this without writing so many ********* statements, we want to use a loop
-//        Scanner stars = new Scanner(System.in);
-//        System.out.print("Enter a number of stars: ");
-//        double numOfStars = stars.nextDouble();
-//
-//        for (int i = 0; i >= 0; i--) {
-//            System.out.println();
-//        }
+        System.out.println("Welcome to the First Part!");
+        System.out.print("Enter the number of asterisks: ");
+
+        Scanner stars = new Scanner(System.in); //this is to get user input
+        int numOfStars = stars.nextInt();
+
+
+        for (int i = numOfStars; i >= 0; i--) { //in order to print i amount of times we use the outer loop
+            for (int j = 0; j < i; j++) { //we are print this character j amount of times for each i
+                System.out.print("*"); //this is the character we are printing
+            }
+            System.out.println(); //this drops us to the next line
+        }
 
     }
 }
