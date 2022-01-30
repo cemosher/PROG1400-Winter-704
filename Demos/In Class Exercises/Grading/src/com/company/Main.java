@@ -7,11 +7,18 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         Scanner grade = new Scanner(System.in);
-        int myVar1 = ["A", "B", "C", "D", "E", "F"];
-        int myVar2 = [5, 4, 3, 2, 1, 0];
+        String[] myVar1 = {"A", "B", "C", "D", "E", "F"};
+        double[] myVar2 = {5, 4, 3, 2, 1, 0};
 
-        System.out.print("Enter a letter grade: ");
-        if
+        while (true) {
+            System.out.print("Enter a letter grade: ");
+            String input = grade.nextLine();
+            for (int i = 0; i < myVar1.length; i++) {
+                if (input.equals(myVar1[i])) {
+                    System.out.println(myVar2[i] + " is your numerical grade.");
+                }
+            }
+        }
     }
 }
 
