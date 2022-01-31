@@ -7,9 +7,9 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         Scanner sc = new Scanner(System.in);
-        House houseList[] = new House[1];
+        House houseList[] = new House[3];
 
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < houseList.length; i++) {
             System.out.print("Enter the house address: ");
             String houseAddress = sc.nextLine();
             System.out.print("Enter the length of the house: ");
@@ -19,13 +19,14 @@ public class Main {
             System.out.print("Enter the number of floors: ");
             double houseNumOfFloors = sc.nextDouble();
             System.out.print("Enter the color of the house: ");
-            String houseColor = sc.nextLine();
             sc.nextLine();
+            String houseColor = sc.nextLine(); //not sure why this doesn't work in the same manner as house address
+            //but it does function in this way
 
 
             houseList[i] = new House(houseAddress, houseLength, houseWidth, houseColor, houseNumOfFloors);
         }
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < houseList.length; i++) {
                 houseList[i].houseInfo();
                 houseList[i].printLevelArea();
                 houseList[i].printTotalArea();

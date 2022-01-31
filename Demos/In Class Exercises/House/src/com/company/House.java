@@ -18,7 +18,7 @@ public class House {
 
     public void houseInfo() {
         System.out.println("The house address is " + this.houseAddress + ". The length of the house is " + this.houseLength
-                + ". The width of the house is " + this.houseWidth + ". The number of floors in the house is "
+                + " feet. The width of the house is " + this.houseWidth + " feet. The number of floors in the house is "
                 + this.numOfFloors + ". The color of the house is " + this.houseColor + ".");
     }
     public void printLevelArea() {
