@@ -1,91 +1,42 @@
 package com.company;
 
 public class Animal {
-    //Member variables
-    //Step 1 define an Animal class with 4 properties
+    //step 1
+    //define an animal class with four properties
+    //1. species (ex. lion, cow, anything else)
+    //2. max weight (max avg weight of the adult of the species)
+    //3. habitat (jungle, ocean, mountain)
+    //4. is endangered (flag to indicate whether the animal species is endangered)
+
     private String species;
-    private int weight;
+    private double maxWeight;
     private String habitat;
-    private String isEndangered;
-    private String noise; //added an extra one
+    private boolean isEndangered;
 
-    //Step 2 add a default constructor
-    //Default Constructor
+    //step 2
+    //add a user defined constructor with any constant values that you feel are required
     public Animal() {
-        this.setSpecies("cat");
-        this.setWeight(12);
-        this.setHabitat("home");
-        this.setEndangered("not an endangered");
-        this.setNoise("meow");
+        this.setSpecies("Dog");
+        this.setMaxWeight(30);
+        this.setHabitat("Home");
+        this.setEndangered(false);
     }
-    //Step 3 Add a parameterized constructor
-    //Parameterized Constructor
-    public Animal(String species, int weight, String habitat, String isEndangered, String noise) {
-        this.setSpecies(species);
-        this.setWeight(weight);
-        this.setHabitat(habitat);
-        this.setEndangered(isEndangered);
-        this.setNoise(noise);
-    }
-    //Step 4 Getters and Setters
-    public String getSpecies() {
-        return species;
+    //step 3
+    //add a parameterized constructor to allow setting of all properties on object creation
+    public Animal(String pSpecies, double pMaxWeight, String pHabitat, boolean pIsEndangered) {
+        this.setSpecies(pSpecies);
+        this.setMaxWeight(pMaxWeight);
+        this.setHabitat(pHabitat);
+        this.setEndangered(pIsEndangered);
     }
 
-    public void setSpecies(String species) {
-        this.species = species;
-    }
 
-    public int getWeight() {
-        return weight;
-    }
+    //step 4
+    //determine scope/access of properties
+    //are they completely internal to the class?
+    //should an external class be permitted to read the property values?
+    //should an external class be permitted to change the property values
 
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    public String getHabitat() {
-        return habitat;
-    }
-
-    public void setHabitat(String habitat) {
-        this.habitat = habitat;
-    }
-
-    public String getEndangered() {
-        return isEndangered;
-    }
-
-    public void setEndangered(String endangered) {
-        isEndangered = endangered;
-    }
-
-    public String getNoise() {
-        return noise;
-    }
-
-    public void setNoise(String noise) {
-        this.noise = noise;
-    }
-
-    //Step 6 Methods
-    public String toString() {
-        return species + " can be fed steak.";
-    }
-    public String toString1() {
-        return species + " makes a " + noise + " sound.";
-    }
-    public String toString2() {
-        return "I am a " + weight + "lb " + species + " who lives in a " + habitat + ". I am " + isEndangered + " species.";
-    }
+    //step 5 setters and getters
 
 }
-
-//Step 4 Determine the scope and access of the properties
-
-//Are they completely internal to the class?
-//  they are public and available outside of the class
-
-//Should an external class be permitted to read the property values?
-
-//Should an external class be permitted to change the property values?
