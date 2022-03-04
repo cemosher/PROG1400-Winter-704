@@ -17,7 +17,7 @@ public class Student {
     }
     //method
     public String stdReport() {
-        return String.format("%s :\tAssignment1: - %f\tAssignment2: - %.2fTotal: - %.2f",
+        return String.format("%s :\tAssignment1: - %.1f\tAssignment2: - %.1f\tTotal: - %.1f",
                 this.stName, this.assignment1Mark, this.assignment2Mark, this.totalMark);
     }
 }
